@@ -1,0 +1,164 @@
+ <html>
+        <title>Home | Sphere India</title>
+        <head>
+            <script src="script.js" defer>
+
+            </script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+            }
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+            nav {
+                position: fixed;
+                width:100%;
+                height: 10%;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1vw 8vw;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+                z-index: 999;
+            }
+            nav .navigation {
+                display: flex;
+            }
+            nav .navigation ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            nav .navigation ul li {
+                list-style: none;
+                margin-left: 30px;
+            }
+            nav .navigation ul li a {
+                text-decoration: none;
+                color: rgb(21, 21, 100);
+                font-size: 16px;
+                font-weight: 300;
+                transition: 0.3s ease;
+            }
+            nav .navigation ul li a:hover {
+                color: green;
+            }
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            .carousel{
+                width: 100vw;
+                height:  100vw;
+                position: relative;
+            }
+            .carousel > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+            }
+            .slide{
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+                transition: 200ms opacity ease-in-out;
+                transition-delay: 200ms;
+            }
+            .slide > img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .slide[data-active]{
+                opacity: 1;
+                z-index: 1;
+                transition-delay: 0ms; 
+            }
+            .carousel-button {
+                position: absolute;
+                z-index: 2;
+                background: none;
+                border: none;
+                font-size: 4rem;
+                top: 50%;
+                transform: translateY(-50%);
+                color: rgba(255, 255, 255, .5);
+                cursor: pointer;
+                border-radius: .25rem;
+                padding: 0 .5rem;
+                background-color: rgba(0, 0, 0, .1);
+            }
+
+            .carousel-button:hover,
+            .carousel-button:focus {
+                color: white;
+                background-color: rgba(0, 0, 0, .2);
+            }
+
+            .carousel-button:focus {
+                outline: 1px solid black;
+            }
+            .carousel-button.prev {
+                left: 1rem;
+            }
+            .carousel-button.next {
+                right: 1rem;
+            }
+
+        </style>
+        </head>
+            <body> 
+        <nav>
+            <img src="" alt="logo image"/>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">OUR WORK</a></li>
+                    <li><a href="#">OUR NETWORK</a></li>
+                    <li><a href="#">RESOURCES</a></li>
+                    <li><a href="#">ACCOUNTABILITY</a></li>
+                    <li><a href="#">OUTREACH</a></li>
+                    <li><a href="#">GET INVOLVED</a></li>
+                    <li><a href="#">IFHA</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+<section aria-label="Newest Photos">
+    <div  class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+    <ul data-slides>
+        <li class="slide" data-active>
+            <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+            <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #2">
+        </li>
+        <li class="slide">
+            <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #3">
+        </li>
+    </ul>
+</div>
+</section>
+    </body>
+</html>

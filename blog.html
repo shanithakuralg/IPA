@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IPAlogo.png" type="image/x-icon">
+    <title>BLOG | IPA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1vw 8vw;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+            z-index: 999;
+        }
+
+        nav img {
+            width: 80px;
+            cursor: pointer;
+        }
+
+        nav .navigation {
+            display: flex;
+        }
+
+        nav .navigation ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        nav .navigation ul li {
+            list-style: none;
+            margin-left: 30px;
+        }
+
+        nav .navigation ul li a {
+            text-decoration: none;
+            color: rgb(21, 21, 100);
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav .navigation ul li a:hover {
+            color: #fdc93b;
+        }
+
+        .heading {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(44, 44, 80);
+        }
+        .heading img {
+            width: 50%;
+            height: 10%;
+            margin-left: 25%;
+        }
+       
+        .introduction {
+            margin-right: 30px;
+            color: rgb(44, 44, 80);
+        }
+
+        .content1 {
+            font-size: 20px;
+            float: right;
+            margin-right: 25px;
+        }
+        .blog-heading {
+            margin-left: 30px;
+            font-size: 25px;
+            color:rgb(44, 44, 80);
+            text-align: center;
+
+        }
+        .manager-txt-heading {
+            color: rgb(44, 44, 80);
+            margin-left: 30px;
+            font-size: 25px;
+        }
+        .manager-txt-subheading {
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;
+        }
+        .blog_img img {
+            width: 40%;
+            height: 30%;
+            margin-left: 30%;
+        }
+
+
+        /* footer */
+
+        footer {
+            padding: 8vw;
+            background-color: #101C32;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-col {
+            padding-bottom: 40;
+        }
+
+        footer h3 {
+            color: rgb(241, 240, 245);
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        footer li {
+            list-style: none;
+            color: #7b838a;
+            padding: 10px 0;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        footer li:hover {
+            color: rgb(241, 240, 245);
+        }
+
+        footer p {
+            color: #7b838a;
+        }
+
+        footer .subscribe {
+            margin-top: 20px;
+        }
+
+        footer input {
+            width: 220px;
+            padding: 15px 12px;
+            background: #334F6C;
+            border: none;
+            outline: none;
+            color: #fff;
+        }
+
+        footer .subscribe a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 12px 15px;
+            font-weight: 600;
+            background-color: #fff;
+            font-weight: 600;
+        }
+
+        #footer .subscribe a.yellow {
+            color: #fff;
+            background: rgb(21, 21, 100);
+            transition: 0.3 ease;
+        }
+
+        #footer .subscribe a.yellow:hover {
+            color: rgb(21, 21, 100);
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <nav>
+        <img src="newlogo.png" alt="logo" />
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="about.html"> ABOUT </a></li>
+                <li><a href="blog.html"> BLOG</a></li>
+                <li><a href="Courses.html"> COURSES </a></li>
+                <li><a href="index2.html"> CONTACT US </a></li>
+              </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="heading">
+            <h1 align="center"><b>Navigating the Skies:</b> </h1>
+            <br>
+            
+                <img src="airport.jpg" alt="image">
+            
+        </div>
+        <br>
+        <p align="center"> A Guide to Pursuing a Career in Aviation</p>
+        <br>
+        <br>
+        <br>
+        <div class="blog-heading">
+            <h1>Blog</h1>
+        </div>
+        <br>
+        <div style="position:relative;">
+            <div class="blog-container owl-carousel owl-theme" id="owl-blog">
+
+                <div class="single-manager">
+                    <div class="single-manager-desc" style="background-image: url(airport.jpg)"></div>
+                </div>
+                <div class="manager-txt-heading">
+                    <span class="manager-txt-heading-cnt"><b>Introduction:</b>
+                    </span>
+                </div>
+                <div class="manager-txt-subheading">The world of aviation is a captivating realm that has captured the
+                    dreams of many. From soaring through the blue skies to exploring far-off destinations, a career in
+                    aviation offers excitement, challenge, and an opportunity to be part of an industry that connects
+                    the world. Whether you're drawn to becoming a pilot, an aerospace engineer, an air traffic
+                    controller, or any other aviation-related profession, this guide will provide you with valuable
+                    insights on how to pursue a successful career in aviation.
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+                        <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                    </div>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Explore Your Passion:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">To embark on a career in aviation, a genuine passion for flying, aircraft, and the principles of flight is essential. Take the time to understand why you're drawn to this field and what specific aspect of aviation intrigues you the most.
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="single-manager">
+                        <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                    </div>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Educational Pathways:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">Depending on your chosen aviation career, there are different educational paths to consider. Becoming a pilot often involves obtaining a Private Pilot License (PPL) followed by advanced licenses like Commercial Pilot License (CPL) or Airline Transport Pilot License (ATPL). For roles like aerospace engineering or air traffic control, a degree in related fields such as aeronautical engineering, aviation management, or aviation technology is crucial.
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="single-manager">
+                        <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                     </div>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Training and Certification:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">For aspiring pilots, flight training is a significant step. This involves hands-on flight experience under the guidance of certified flight instructors. Training is intense and demands dedication, as it covers aspects like flight maneuvers, navigation, meteorology, and emergency procedures. Rigorous training and meeting the required flight hours are essential to earning various pilot licenses.
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="single-manager">
+                        <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                     </div>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Safety First:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">Safety is paramount in aviation. Understanding the rules and regulations set by aviation authorities is crucial for every aviation professional. From pre-flight checks to adherence to air traffic control instructions, a deep commitment to safety is non-negotiable.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="single-manager">
+                      <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)"></div>
+                     </div> 
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Building Experience:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">Building experience in the aviation industry often involves starting with entry-level positions. This could mean becoming a flight instructor, working in aircraft maintenance, or joining an airline in a junior role. Gaining experience not only enhances your skills but also exposes you to the nuances of the industry.
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="single-manager">
+                       <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)"></div>
+                    </div>
+                                        <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Networking:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">Building a strong network within the aviation community is valuable. Attend aviation events, seminars, and conferences to connect with professionals, exchange insights, and learn about potential job opportunities.
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="single-manager">
+                       <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)"></div>
+                     </div> 
+                     <br>
+                     <br>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Continued Learning:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">The aviation industry is dynamic and constantly evolving. Stay updated with the latest advancements in technology, regulations, and best practices. Pursue additional certifications or courses to enhance your skills and stay competitive.
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="single-manager">
+                       <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                     </div>
+                     <br>
+                     <br>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Soft Skills Matter:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">Effective communication, problem-solving, teamwork, and adaptability are critical in aviation. Pilots, air traffic controllers, and aviation professionals need to remain composed under pressure and make split-second decisions.
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="single-manager">
+                      <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                     </div>
+                     <br>
+                     <br>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt"><b>Job Search and Growth:</b>
+                            </span>
+                        </div>
+                        <div class="manager-txt-subheading">Whether you're looking for pilot positions in commercial airlines, engineering roles in aerospace companies, or other aviation-related jobs, online job boards, industry-specific websites, and company career pages are great places to start your job search. Once you secure a position, embrace opportunities for growth and advancement within your chosen field.
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="single-manager">
+                       <div class="single-manager-desc"
+                            style="background-image: url(airport.jpg)">
+                        </div>
+                     </div> 
+                     <br>
+                     <br>
+                    <div class="manager-prod-txt">
+                        <div class="manager-txt-heading">
+                            <span class="manager-txt-heading-cnt">
+                               <b> Conclusion:</b>
+                                 </span>
+                        </div>
+                        <div class="manager-txt-subheading">Pursuing a career in aviation is a journey that requires dedication, perseverance, and a genuine love for flight. From the thrill of takeoff to the satisfaction of a safe landing, the aviation industry offers a range of opportunities for those who are willing to put in the effort. By following the educational and experiential pathways outlined in this guide, you can navigate the skies and make your mark in this exciting field. </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+      <br>
+      <br>
+      <br>
+      <div class="blog_img">
+        <img src="airplane.jpg" alt="image">
+      </div>
+      <br>
+     <br>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="footer-col">
+                <h3>Social Handles</h3>
+                <li>Instagram <i class="fab fa-instagram"></i></li>
+                <li>Facebook <i class="fab fa-facebook-f"></i></li>
+                <li>Linkedin <i class="fab fa-linkedin-in"></i></li>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <li>Indian Pilot Academy, Flat no. A9 - 304, Saviour, Crossing Republic Gaziabad 201016, Uttar Pradesh
+                </li>
+                <li>www.ipa.com</li>
+                <li>+91 279327922</li>
+                <li>+91 2930283438</li>
+
+            </div>
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+
+            </div>
+            <!-- <div class="footer-col">
+      <h3>Top Products</h3>
+      <li>Manage Reputation</li>
+      <li>Power Tools</li>
+      <li>Managed Website</li>
+      <li>Marketing Service</li>
+      
+    </div> -->
+            <!-- <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>you can trust us , we only send promo offers, </p>
+      <div class="subscribe">
+        <input type="text" placeholder="your Email address" id="">
+        <a href="#" class ="yellow">SUBSCRIBE</a>
+      </div>
+    </div> -->
+
+            <div class"copyright">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>copyright @2023 All rights reserved | This website is made by Xistence Media</p>
+                <div class="pro-links"></div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
